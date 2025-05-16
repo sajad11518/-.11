@@ -1,74 +1,36 @@
-/* إعداد الخط والتصميم الأساسي */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-  color: #003366;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>موقعي الأزرق</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- رأس الصفحة -->
+  <header>
+    <div class="logo">🔵 موقعي</div>
+    <h1>مرحبًا بك في موقعي الاحترافي</h1>
+  </header>
 
-/* رأس الصفحة */
-header {
-  background-color: #007BFF;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-header .logo {
-  font-size: 2rem;
-  font-weight: bold;
-}
+  <!-- القسم الرئيسي -->
+  <main>
+    <section class="content">
+      <h2>خدماتنا</h2>
+      <p>نقدّم حلولًا رقمية مبتكرة تساعدك على التميز في عالم الأعمال.</p>
+      <button class="cta">ابدأ الآن</button>
+    </section>
+  </main>
 
-/* القسم الرئيسي */
-main {
-  flex: 1;
-  padding: 2rem;
-  background-color: #f4f9ff;
-}
-.content {
-  text-align: center;
-}
-.content h2 {
-  color: #007BFF;
-}
-.cta {
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.cta:hover {
-  background-color: #0056b3;
-}
-
-/* التذييل */
-footer {
-  background-color: #003366;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-.social-links a {
-  margin: 0 0.5rem;
-  color: white;
-  text-decoration: none;
-}
-.social-links a:hover {
-  text-decoration: underline;
-}
-
-/* التصميم المتجاوب */
-@media (max-width: 600px) {
-  header, main, footer {
-    padding: 1rem;
-  }
-  .cta {
-    width: 100%;
-  }
-}
+  <!-- التذييل -->
+  <footer>
+    <p>تابعنا على:</p>
+    <div class="social-links">
+      <a href="#">🔗 فيسبوك</a>
+      <a href="#">🔗 تويتر</a>
+      <a href="#">🔗 لينكدإن</a>
+    </div>
+    <p>&copy; 2025 جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
